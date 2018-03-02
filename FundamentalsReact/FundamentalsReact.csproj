@@ -152,10 +152,24 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="src\components\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\app.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\button.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\dropdownlist.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\index.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\input.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\password.tsx" />
+    <TypeScriptCompile Include="src\components\about.tsx" />
+    <TypeScriptCompile Include="src\components\header.tsx" />
+    <TypeScriptCompile Include="src\components\index.tsx" />
     <TypeScriptCompile Include="src\index.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IButtonProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IDropDownListProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IInputProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IKeyValue.tsx" />
+    <TypeScriptCompile Include="src\interfaces\index.tsx" />
+    <TypeScriptCompile Include="src\router.tsx" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
