@@ -15,10 +15,505 @@
     }
 /*React apply activeClassName to <a> element, but Bootstrap active class is over <li> element*/
 .navbar .nav .active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background: #e7e7e7 !important;
-    color: #333 !important;
+    /*background: #e7e7e7 !important;*/
+    color: #38a6a6 !important;
 }
 
 .avatar {
     max-width: 80px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    /* color: #333; */
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #38a6a6 !important;
+    /* background-color: #e7e7e7; } */
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+    color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #cbc6c1;
+}
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+.blogInput{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+/*input:hover {
+        background: #b3aca7;
+        color: #e2dedb;
+    }*/
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    border: solid 1px #b3aca7;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+/*textarea:hover {
+        background: #b3aca7;
+        color: #e2dedb;
+    }*/
+
+#submit {
+    width: 502px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #b3aca7;
+    border-top: none;
+}
+
+    #submit:hover {
+        color: #e2dedb;
+    }
+
+.headerBlogForm {
+    position: relative;
+    margin: 25px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Banner */
+.an-profile-banner {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.an-profile-banner .an-profile-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.overlay-utility, .an-user-single .profile-pic-blur-bg .overlay, .an-profile-banner .an-profile-overlay, .an-page-consturction .overlay, .an-porfolio-single a .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.an-inner-page-title {
+    position: relative;
+    padding: 40px 0;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+HTML SCSS Result Edit on * {
+    padding: 0;
+    /* Standard Reset, and we're adding box-sizing:border-box because it's awesome. */
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+}
+
+.content-box {
+    width: 100%;
+    height: 400px;
+    max-width: 80%;
+    margin: 94px auto 0 auto;
+    position: relative;
+    /* So we can position the banner within the box */
+    background: gray;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+#ribbon-container {
+    position: absolute;
+    top: 15px;
+    right: -20px;
+    overflow: visible;
+    /* so we can see the pseudo-elements we're going to add to the anchor */
+    font-size: 18px;
+    /* font-size and line-height must be equal so we can account for the height of the banner */
+    line-height: 18px;
+}
+
+    #ribbon-container:before {
+        content: "";
+        height: 0;
+        width: 0;
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 0;
+        border-top: 29px solid rgba(0, 0, 0, .3);
+        /* These 4 border properties create the first part of our drop-shadow */
+        border-bottom: 29px solid rgba(0, 0, 0, .3);
+        border-right: 29px solid rgba(0, 0, 0, .3);
+        border-left: 29px solid transparent;
+    }
+
+    #ribbon-container:after {
+        /* This adds the second part of our dropshadow */
+        content: "";
+        height: 3px;
+        background: rgba(0, 0, 0, .3);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 58px;
+        right: 3px;
+    }
+
+    #ribbon-container a {
+        display: block;
+        padding: 20px;
+        position: relative;
+        /* allows us to position our pseudo-elements properly */
+        background: #0089d0;
+        overflow: visible;
+        height: 58px;
+        margin-left: 29px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+        #ribbon-container a:after {
+            /* this creates the "folded" part of our ribbon */
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            bottom: -15px;
+            right: 0;
+            border-top: 15px solid #004a70;
+            border-right: 15px solid transparent;
+        }
+
+        #ribbon-container a:before {
+            /* this creates the "forked" part of our ribbon */
+            content: "";
+            height: 0;
+            width: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -29px;
+            border-top: 29px solid #0089d0;
+            border-bottom: 29px solid #0089d0;
+            border-right: 29px solid transparent;
+            border-left: 29px solid transparent;
+        }
+
+        #ribbon-container a:hover {
+            background: #009ff1;
+        }
+
+            #ribbon-container a:hover:before {
+                /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+                border-top: 29px solid #009ff1;
+                border-bottom: 29px solid #009ff1;
+     
+                
+                
+             }
+
+
+/*CHECKBOX*/
+
+/* Customize the label (the container) */
+.checkBoxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+   
+}
+
+
+    .checkBoxContainer input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkBoxContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkBoxContainer input:checked ~ .checkmark {
+    background-color: #38a6a6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkBoxContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkBoxContainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+/*
+input[type="checkbox"] + label, input[type="radio"] + label {
+    color: #000000;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+    text-decoration: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 2.4rem;
+    padding-right: 0.75rem;
+    position: relative;
+    margin-bottom: 0;
+}
+*/
+label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#style-4::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar {
+    width: 2px;
+    background-color: #F5F5F5;
+}
+
+#style-4::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+
+.blogScrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+.blogscrollbar {
+    max-height: 500px !important;
+    border-left: 1px solid rgb(237, 237, 237) !important;
+    margin: 0px auto !important;
+    overflow-y: scroll !important;
+    overflow-x : hidden !important;
+}
+
+
+
+
+
+.divider {
+    width: 5px;
+    height: auto;
+    display: inline-block;
+}
+
+.gridDiv {
+    height: 60%;
 }

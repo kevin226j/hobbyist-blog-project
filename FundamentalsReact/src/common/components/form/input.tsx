@@ -5,19 +5,16 @@ import { IInputProps } from "../../../interfaces";
 export const Input: React.StatelessComponent<IInputProps> = (props) => {
 
     return (
-        <div className={formatWrapperClass(props)}>
-            <label htmlFor={props.name}>{props.label}</label>
-            <div className="field">
-                <input type="text"
+        <React.Fragment>
+                <input type={props.type}
                     name={props.name}
-                    className="form-control"
                     placeholder={props.placeholder}
                     value={props.value}
                     onChange={onChangeInput(props)}
+                    id={props.id}
+                className = {props.className}
                 />
-            </div>
-            <div className="help-block">{props.error}</div>
-        </div>
+            </React.Fragment>
     );
 
 }

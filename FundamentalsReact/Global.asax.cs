@@ -8,7 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 
-namespace FundamentalsReact
+namespace Hobbyist
 {
     public class Global : HttpApplication
     {
@@ -16,6 +16,7 @@ namespace FundamentalsReact
         {
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
+            UnityConfig.Instance.RegisterComponents();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);            
         }

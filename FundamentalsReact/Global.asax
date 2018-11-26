@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="FundamentalsReact.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Hobbyist.Global" Language="C#" %>

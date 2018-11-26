@@ -1,16 +1,16 @@
 ﻿import * as React from "react";
 import { Router, Route, browserHistory, IndexRoute } from "react-router";
 import { AboutPage, HomePage } from "./components";
-import { App } from "./app";
+import { BlogContainer } from "./components/Blogs/BlogContainer";
+import { HomePageContainer } from "./components/Public/HomePageContainer";
+import { PublicApp } from "./PublicApp";
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
-
     return (
         <Router history={browserHistory}>
-            <Route path="/" component={App}>
-                <IndexRoute component={AboutPage} />
-                <Route path="/about" component={AboutPage} />
-                <Route path="/home" component={HomePage} />
+            <Route path="/" component={PublicApp}>
+                <IndexRoute component={HomePageContainer} />
+                <Route path="/blogs" component={BlogContainer}/>
             </Route>
         </Router>
     );
