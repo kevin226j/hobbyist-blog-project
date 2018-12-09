@@ -1,0 +1,376 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.10.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.10.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46568218-CF11-431A-AE1D-50F1E2060DAE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hobbyist</RootNamespace>
+    <AssemblyName>Hobbyist</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Unity.Mvc5, Version=1.3.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Mvc5.1.3.0\lib\net45\Unity.Mvc5.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.WebApi, Version=5.3.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.WebAPI.5.3.0\lib\net45\Unity.WebApi.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\packages\AWSSDK.Core.3.3.29.12\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3">
+      <HintPath>..\packages\AWSSDK.S3.3.3.28\lib\net45\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.10\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.6\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.6\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="CommonServiceLocator">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="src\css\site.css" />
+    <Content Include="src\index.html" />
+    <Content Include="webpack.config.js" />
+    <Content Include="package.json" />
+    <Content Include=".babelrc" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="tsconfig.json" />
+    <None Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <None Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1-vsdoc.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <None Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <None Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js" />
+    <None Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <None Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <None Include="Scripts\README.md" />
+    <None Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.min.js" />
+    <None Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper.js" />
+    <None Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <None Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper-utils.js" />
+    <None Include="Scripts\index.d.ts" />
+    <None Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <None Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper.js" />
+    <None Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <None Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <None Include="Scripts\bootstrap.min.js.map" />
+    <None Include="Scripts\bootstrap.js.map" />
+    <None Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <None Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.min.css" />
+    <None Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.css" />
+    <None Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <None Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <None Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <None Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Api\Blogs\BlogController.cs" />
+    <Compile Include="Controllers\Api\Products\ProductCategoryController.cs" />
+    <Compile Include="Controllers\Api\Products\ProductController.cs" />
+    <Compile Include="Controllers\Api\Products\ProductListingController.cs" />
+    <Compile Include="Controllers\Api\Users\LoginController.cs" />
+    <Compile Include="Controllers\Api\Users\ProfileController.cs" />
+    <Compile Include="Controllers\Api\Users\InterestController.cs" />
+    <Compile Include="Controllers\WebScrapeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Blogs\BlogService.cs" />
+    <Compile Include="Services\Blogs\Interfaces\IBlogService.cs" />
+    <Compile Include="Services\Blogs\Models\Blog.cs" />
+    <Compile Include="Services\Blogs\Models\Requests\BlogAddRequest.cs" />
+    <Compile Include="Services\Blogs\Models\Requests\BlogUpdateRequest.cs" />
+    <Compile Include="Services\Interfaces\IWebScrapeService.cs" />
+    <Compile Include="Services\Interfaces\RandomQuotes\RandomQuote.cs" />
+    <Compile Include="Services\Products\Interfaces\IProductCategoryService.cs" />
+    <Compile Include="Services\Products\Interfaces\IProductListingService.cs" />
+    <Compile Include="Services\Products\ProductCategoryService.cs" />
+    <Compile Include="Services\Products\ProductListingService.cs" />
+    <Compile Include="Services\Users\Interests\Interfaces\IInterestService.cs" />
+    <Compile Include="Services\Users\Interests\InterestService.cs" />
+    <Compile Include="Services\Users\Interests\Models\Interest.cs" />
+    <Compile Include="Services\Users\Interests\Models\Requests\InterestAddRequest.cs" />
+    <Compile Include="Services\Products\Interfaces\IProductService.cs" />
+    <Compile Include="Services\Products\Models\Products\Product.cs" />
+    <Compile Include="Models\Response\BaseResponse.cs" />
+    <Compile Include="Models\Response\ItemResponse.cs" />
+    <Compile Include="Models\Response\ItemsResponse.cs" />
+    <Compile Include="Models\Response\SuccessResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BaseService.cs" />
+    <Compile Include="Services\Products\Models\Products\ProductCategory.cs" />
+    <Compile Include="Services\Products\Models\Products\ProductListing.cs" />
+    <Compile Include="Services\Products\Models\Requests\ProductAddRequest.cs" />
+    <Compile Include="Services\Products\Models\Requests\ProductCategoryAddRequest.cs" />
+    <Compile Include="Services\Products\Models\Requests\ProductCategoryUpdateRequest.cs" />
+    <Compile Include="Services\Products\Models\Requests\ProductListingAddRequest.cs" />
+    <Compile Include="Services\Products\Models\Requests\ProductListingUpdateRequest.cs" />
+    <Compile Include="Services\Products\Models\Requests\ProductUpdateRequest.cs" />
+    <Compile Include="Services\Products\ProductService.cs" />
+    <Compile Include="Services\Users\Interests\Models\Requests\InterestUpdateRequest.cs" />
+    <Compile Include="Services\Users\Login\Interfaces\ILoginService.cs" />
+    <Compile Include="Services\Users\Login\Models\Requests\UserBaseAddRequest.cs" />
+    <Compile Include="Services\Users\Login\Models\Requests\UserBaseUpdateRequest.cs" />
+    <Compile Include="Services\Users\Login\Models\UserBase\UserBase.cs" />
+    <Compile Include="Services\Users\Login\LoginService.cs" />
+    <Compile Include="Services\Users\Profile\Interfaces\IUserInfoService.cs" />
+    <Compile Include="Services\Users\Profile\UserInfoService.cs" />
+    <Compile Include="Services\Users\Profile\Models\Requests\UserInfoAddRequest.cs" />
+    <Compile Include="Services\Users\Profile\Models\Requests\UserInfoUpdateRequest.cs" />
+    <Compile Include="Services\Users\Profile\Models\UserInfo.cs" />
+    <Compile Include="Services\WebScrapeService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_LayoutPublic.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Public\Homepage.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Views\Member\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\api\apiExecute.tsx" />
+    <TypeScriptCompile Include="src\api\Blogs\index.tsx" />
+    <TypeScriptCompile Include="src\api\WebScrape\index.tsx" />
+    <TypeScriptCompile Include="src\app.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\button.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\checkbox.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\dropdownlist.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\index.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\input.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\password.tsx" />
+    <TypeScriptCompile Include="src\common\components\form\textarea.tsx" />
+    <TypeScriptCompile Include="src\components\about.tsx" />
+    <TypeScriptCompile Include="src\components\Blogs\BlogContainer.tsx" />
+    <TypeScriptCompile Include="src\components\Blogs\BlogForm.tsx" />
+    <TypeScriptCompile Include="src\components\Blogs\BlogHeader.tsx" />
+    <TypeScriptCompile Include="src\components\Blogs\BlogList.tsx" />
+    <TypeScriptCompile Include="src\components\Blogs\index.tsx" />
+    <TypeScriptCompile Include="src\components\header.tsx" />
+    <TypeScriptCompile Include="src\components\index.tsx" />
+    <TypeScriptCompile Include="src\components\Public\HomePageContainer.tsx" />
+    <TypeScriptCompile Include="src\interfaces\Blogs\IBlogEntity.tsx" />
+    <TypeScriptCompile Include="src\interfaces\Blogs\IBlogFormEntity.tsx" />
+    <TypeScriptCompile Include="src\interfaces\Blogs\index.tsx" />
+    <TypeScriptCompile Include="src\interfaces\Blogs\IRandomQuote.tsx" />
+    <TypeScriptCompile Include="src\interfaces\ICheckBoxProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IError.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IGridViewOptions.tsx" />
+    <TypeScriptCompile Include="src\interfaces\ITextAreaProps.tsx" />
+    <TypeScriptCompile Include="src\PublicApp.tsx" />
+    <TypeScriptCompile Include="src\index.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IButtonProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IDropDownListProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IInputProps.tsx" />
+    <TypeScriptCompile Include="src\interfaces\IKeyValue.tsx" />
+    <TypeScriptCompile Include="src\interfaces\index.tsx" />
+    <TypeScriptCompile Include="src\PublicRouter.tsx" />
+    <TypeScriptCompile Include="src\router.tsx" />
+    <TypeScriptCompile Include="src\PublicWrapper.tsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hobbyist.DbAccess\Hobbyist.DbAccess.csproj">
+      <Project>{4644a848-6579-4d38-894d-bd320955cd64}</Project>
+      <Name>Hobbyist.DbAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52901</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52901/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
